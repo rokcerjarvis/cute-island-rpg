@@ -28,11 +28,12 @@
 - Current branch：master。
 - Commit author：RockerJarvis（使用者指定；僅設定此 repository）。
 - Remote URL：尚未設定。
-- Local HEAD：建立 snapshot commit 後，以 `git rev-parse HEAD` 取得本報告所在 commit；尚未產生 commit。
+- 遊戲 baseline commit：`738a4f1832aa8857cfd84fffec849ef81614d12c`，`Milestone 8.1 - overworld party management and creature status`，135 files。
+- Local HEAD：本報告所在 commit，以 `git rev-parse HEAD` 取得；baseline commit 如上，後續僅補齊交付報告。
 - Pushed HEAD：無，尚未 push。
 - GitHub CLI：已依使用者授權安裝 2.102.0；`gh auth status` 回報未登入任何 GitHub host。
 - Push result：BLOCKED — 尚未登入，依規格停止 repo create/push；需使用者完成 `gh auth login`，不繞過 auth。
-- Working tree clean：此報告納入首次 snapshot commit，commit 後另於交付訊息確認。
+- Working tree clean：baseline commit 後已確認 clean；報告更新另作普通 docs commit，交付時再確認。
 - GitHub/local HEAD match：尚未驗證，沒有 remote。
 
 首次 snapshot 使用非破壞性普通 commit/push。沒有 force、history rewrite、tag、Release、Pages 或部署。
