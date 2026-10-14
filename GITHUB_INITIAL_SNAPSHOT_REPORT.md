@@ -23,18 +23,19 @@
 
 ## Git 與 GitHub 狀態
 
-- Repo name：預定 `cute-island-rpg`。
-- Repo visibility：要求 private；尚未建立／驗證。
+- Repo name：`rokcerjarvis/cute-island-rpg`，https://github.com/rokcerjarvis/cute-island-rpg 。已確認 owner 為目前登入的個人帳號（User），不是 organization。
+- Repo visibility：PRIVATE，已由 GitHub API 與 `gh repo view` 確認。
 - Current branch：master。
 - Commit author：RockerJarvis（使用者指定；僅設定此 repository）。
-- Remote URL：尚未設定。
+- Remote URL：`https://github.com/rokcerjarvis/cute-island-rpg.git`（origin fetch/push）。
 - 遊戲 baseline commit：`738a4f1832aa8857cfd84fffec849ef81614d12c`，`Milestone 8.1 - overworld party management and creature status`，135 files。
-- Local HEAD：本報告所在 commit，以 `git rev-parse HEAD` 取得；baseline commit 如上，後續僅補齊交付報告。
-- Pushed HEAD：無，尚未 push。
-- GitHub CLI：已依使用者授權安裝 2.102.0；`gh auth status` 回報未登入任何 GitHub host。
-- Push result：BLOCKED — 尚未登入，依規格停止 repo create/push；需使用者完成 `gh auth login`，不繞過 auth。
-- Working tree clean：baseline commit 後已確認 clean；報告更新另作普通 docs commit，交付時再確認。
-- GitHub/local HEAD match：尚未驗證，沒有 remote。
+- 首次 push 時 Local HEAD：`e5685babf8897398b807b6d595eef179a664a434`。
+- 首次 push 時 Pushed HEAD：`e5685babf8897398b807b6d595eef179a664a434`，GitHub API 驗證一致。
+- GitHub CLI：2.102.0；使用者完成登入後，已確認 active personal account `rokcerjarvis`。憑證由 keyring 管理，不進 repository。
+- Push result：PASS — `git push -u origin master` 成功，tracking origin/master；default branch 為 master。
+- Working tree clean：首次 push 後已確認 clean；此成功報告以普通 docs commit 追加並 push，最終 HEAD 於交付訊息列出（文件無法包含自身 commit hash）。
+- GitHub/local HEAD match：首次 push 一致；報告 commit push 後以 `git rev-parse HEAD`、`git ls-remote origin refs/heads/master` 與 GitHub API 再確認。
+- GitHub 檔案確認：src、tests、e2e、public/assets、scripts、README、package.json/package-lock、M7/M8/M8.1 reports、BATTLE_BALANCE_REPORT、ASSET_GUIDE/UI_GUIDE 均存在；沒有 node_modules/dist。
 
 首次 snapshot 使用非破壞性普通 commit/push。沒有 force、history rewrite、tag、Release、Pages 或部署。
 
