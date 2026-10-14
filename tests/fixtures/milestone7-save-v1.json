@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "createdAt": "2026-10-14T00:00:00Z",
+    "updatedAt": "2026-10-14T11:00:00.000Z",
+    "playTimeSeconds": 2538
+  },
+  "player": {
+    "worldPosition": {
+      "x": 240,
+      "y": 400
+    },
+    "currentZone": "camp"
+  },
+  "party": [
+    {
+      "instanceId": "creature-1",
+      "creatureId": "CUTE_001",
+      "level": 5,
+      "currentExp": 143,
+      "currentHp": 35,
+      "knownSkills": [
+        "SKILL_001",
+        "SKILL_003"
+      ],
+      "status": "OK"
+    }
+  ],
+  "reserveStorage": [
+    {
+      "instanceId": "creature-2",
+      "creatureId": "EVO_001",
+      "level": 16,
+      "currentExp": 4710,
+      "currentHp": 42,
+      "knownSkills": [
+        "SKILL_001",
+        "SKILL_003",
+        "SKILL_010",
+        "SKILL_011"
+      ],
+      "status": "OK"
+    },
+    {
+      "instanceId": "creature-3",
+      "creatureId": "EVO_002",
+      "level": 18,
+      "currentExp": 6706,
+      "currentHp": 35,
+      "knownSkills": [
+        "SKILL_002",
+        "SKILL_008",
+        "SKILL_011",
+        "SKILL_003"
+      ],
+      "status": "OK"
+    }
+  ],
+  "activeInstanceId": "creature-1",
+  "nextInstanceNumber": 4,
+  "progress": {
+    "bossDefeated": true,
+    "firstAreaComplete": true,
+    "campUpgradeSeen": true,
+    "pureCuteMissCount": 21
+  },
+  "dex": {
+    "CUTE_001": "CAPTURED",
+    "CUTE_002": "SEEN",
+    "CUTE_003": "UNKNOWN",
+    "CUTE_004": "UNKNOWN",
+    "CUTE_005": "CAPTURED",
+    "EVO_001": "CAPTURED",
+    "EVO_002": "CAPTURED"
+  },
+  "worldFlags": {},
+  "settings": {}
+}

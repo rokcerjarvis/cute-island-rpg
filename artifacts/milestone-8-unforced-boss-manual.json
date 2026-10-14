@@ -1,0 +1,22 @@
+{
+  "method": "Agent stepwise UI QA in isolated Edge via keyboard/mouse and screenshot inspection; not a claim of human acceptance",
+  "origin": "http://127.0.0.1:5193/",
+  "setup": "Dev New Game Lv12 CUTE_001; F1 same-level Boss QA companions adds Rabbit and Flying Squirrel; F1 full Boss",
+  "bossLevel": 11,
+  "bossInitialHP": 128,
+  "rng": "Natural Math.random; no replacement, seed, forced Cute Event, bossHp, or enemy HP mutation",
+  "commands": 7,
+  "effectivePlayerActions": 6,
+  "switchCommands": 1,
+  "successfulEnemyActions": 6,
+  "timeline": [
+    {"command":1,"playerAction":"Headbutt","bossHp":108,"activeHp":51,"activeMaxHp":71},
+    {"command":2,"playerAction":"Headbutt","bossHp":88,"activeHp":33,"activeMaxHp":71},
+    {"command":3,"playerAction":"Heal","bossHp":88,"activeHp":27,"activeMaxHp":71,"healed":14},
+    {"command":4,"playerAction":"Defend","bossHp":88,"activeHp":27,"activeMaxHp":71,"enemyAction":"Defend"},
+    {"command":5,"playerAction":"Switch to Rabbit","bossHp":88,"activeHp":42,"activeMaxHp":60,"enemyDamage":18},
+    {"command":6,"playerAction":"Heavy flying kick","bossHp":41,"activeHp":29,"activeMaxHp":60,"enemyDamage":13},
+    {"command":7,"playerAction":"Heavy flying kick","bossHp":0,"activeHp":29,"activeMaxHp":60,"outcome":"VICTORY","exp":440}
+  ],
+  "evidence": "artifacts/m8-manual-boss-start.png and artifacts/m8-manual-boss-action-1..7*.png"
+}
